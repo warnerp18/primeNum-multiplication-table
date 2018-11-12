@@ -5,10 +5,10 @@ let obj = {};
 module.exports = (args = 10, primeNums) => {
   primeNums.forEach( number => {
     obj[number] = function(param) {
-      return number * param; 
-    }; 
+      return number * param;
+    };
   })
-  
+
   // array of all numbers need to calculate based on user input
   const arrayOfNumsToCalculate = primeNums.slice(0, args);
 
